@@ -1,13 +1,13 @@
 <?php
 
-namespace Dusterio\PlainSqs\Tests;
+namespace Saaslaravel\PlainSqs\Tests;
 use Aws\Sqs\SqsClient;
-use Dusterio\PlainSqs\Jobs\DispatcherJob;
-use Dusterio\PlainSqs\Sqs\Queue;
+use Saaslaravel\PlainSqs\Jobs\DispatcherJob;
+use Saaslaravel\PlainSqs\Sqs\Queue;
 
 /**
  * Class QueueTest
- * @package Dusterio\PlainSqs\Tests
+ * @package Saaslaravel\PlainSqs\Tests
  */
 class QueueTest extends \PHPUnit_Framework_TestCase
 {
@@ -28,7 +28,7 @@ class QueueTest extends \PHPUnit_Framework_TestCase
             ->getMock();
 
         $method = new \ReflectionMethod(
-            'Dusterio\PlainSqs\Sqs\Queue', 'createPayload'
+            'Saaslaravel\PlainSqs\Sqs\Queue', 'createPayload'
         );
 
         $method->setAccessible(true);
