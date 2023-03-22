@@ -8,5 +8,9 @@ return [
         'base-integrations-updates' => App\Jobs\HandlerJob::class,
     ],
 
-    'default-handler' => App\Jobs\HandlerJob::class
+    'default-handler' => App\Jobs\HandlerJob::class,
+
+    'connection_names' => [
+        'sqs-plain'
+    ]
 ];
