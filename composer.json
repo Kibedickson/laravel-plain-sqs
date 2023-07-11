@@ -13,6 +13,11 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Przemysław Przyłucki",
+            "email": "contact@saaslaravel.com",
+            "homepage": "saaslaravel.com"
+        },
+        {
             "name": "Denis Mysenko",
             "email": "denis@mysenko.com",
             "homepage": "https://www.mysenko.com"
