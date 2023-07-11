@@ -1,6 +1,5 @@
 {
     "name": "saas-laravel/laravel-plain-sqs",
-    "version": "0.1.0",
     "type": "library",
     "description": "Custom SQS connector for Laravel that supports custom format JSON",
     "keywords": [
