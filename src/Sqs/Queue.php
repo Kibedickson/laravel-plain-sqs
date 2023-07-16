@@ -60,7 +60,7 @@ class Queue extends SqsQueue
         $response = $this->sqs->receiveMessage([
             'QueueUrl' => $queue,
             'AttributeNames' => ['ApproximateReceiveCount'],
-        ]);
+        ])->toArray();
 
         if (isset($response['Messages']) && count($response['Messages']) > 0) {
             $queueId = explode('/', $queue);
@@ -72,11 +72,7 @@ class Queue extends SqsQueue
 
             $response = $this->modifyPayload($response['Messages'][0], $class);
 
-            if (preg_match('/(5\.[4-8]\..*)|(6\.[0-9]*\..*)|(7\.[0-9]*\..*)|(8\.[0-9]*\..*)|(9\.[0-9]*\..*)/', $this->container->version())) {
-                return new SqsJob($this->container, $this->sqs, $response, $this->connectionName, $queue);
-            }
-
-            return new SqsJob($this->container, $this->sqs, $queue, $response);
+            return new SqsJob($this->container, $this->sqs, $response, $this->connectionName, $queue);
         }
     }
 
