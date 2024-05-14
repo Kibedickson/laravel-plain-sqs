@@ -1,11 +1,9 @@
 {
     "name": "saas-laravel/laravel-plain-sqs",
-    "type": "library",
-    "description": "Custom SQS connector for Laravel that supports custom format JSON",
+    "description": "SQS connector for Laravel that supports custom JSON",
     "keywords": [
         "php",
         "laravel",
-        "lumen",
         "sqs",
         "aws"
     ],
@@ -15,7 +13,7 @@
         {
             "name": "Przemysław Przyłucki",
             "email": "contact@saaslaravel.com",
-            "homepage": "saaslaravel.com"
+            "homepage": "https://saaslaravel.com"
         },
         {
             "name": "Denis Mysenko",
@@ -24,15 +22,14 @@
         }
     ],
     "require": {
-        "php": ">=5.5.0",
-        "illuminate/support": "^10.0",
-        "illuminate/queue": "^10.0",
-        "illuminate/bus": "^10.0",
+        "php": ">=8.2",
+        "illuminate/support": "^11.0",
+        "illuminate/queue": "^11.0",
+        "illuminate/bus": "^11.0",
         "aws/aws-sdk-php": "~3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5.10|^10.0",
-        "codeclimate/php-test-reporter": "dev-master"
+        "phpunit/phpunit": "^9.5.10|^10.0"
     },
     "autoload": {
         "psr-4": {
