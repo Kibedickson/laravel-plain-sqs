@@ -163,12 +163,7 @@ class HandlerJob extends Job
 ```
 
 ## Todo
-
-1. Add more unit and integration tests
-
-## Video tutorials
-
-I've just started a educational YouTube channel that will cover top IT trends in software development and DevOps: [config.sys](https://www.youtube.com/channel/UCIvUJ1iVRjJP_xL0CD7cMpg)
+1. Add tests
 
 ## License
 
